@@ -18,7 +18,7 @@ Console.WriteLine($"From number {number} the second digit {result}");
 */
 
 // Задача 13. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-
+/*
 int ThirdNumber(int num)
 {
     while(num>999)
@@ -39,6 +39,9 @@ Console.WriteLine($"From number {number} the third digit {result}");
 }
 else
 Console.WriteLine($"{number} has no third digit");
+*/
+
+// Задача 15. Напишите программу,которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
 
 
