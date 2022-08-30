@@ -42,6 +42,23 @@ Console.WriteLine($"{number} has no third digit");
 */
 
 // Задача 15. Напишите программу,которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+/*
+bool CheckDay (int num)
+{
+    int a = 6;
+    int b = 7;
+    if ((num == a) | (num == b))
+    return true;
+    return false;
+}
 
+Console.WriteLine("Enter number");
+int number = Convert.ToInt32(Console.ReadLine());
 
+bool result = CheckDay(number);
 
+if(result)
+    Console.WriteLine("Yes, it's a day off");
+else
+   Console.WriteLine("No, it's no a day off"); 
+*/
