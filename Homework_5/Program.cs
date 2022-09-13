@@ -76,12 +76,12 @@ Console.Write($"The sum of the elements of odd positions is {sum}");
 */
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементом массива
-/*
+
 double [] CreateRandomArray( int size, int minVal, int maxVal)
 {
     double [] arr = new double [size];
     for(int i=0; i<arr.Length; i++)
-        arr [i]= new Random().Next(minVal, maxVal+1) + new Random().NextDouble();
+        arr [i]= new Random().Next(minVal, maxVal) + new Random().NextDouble();
     return arr;
 }
 
@@ -121,5 +121,5 @@ double [] newArray = CreateRandomArray(size, min, max);
 double result = MaxNumber(newArray)-MinNumber(newArray);
 PrintArray(newArray);
 Console.Write($"The difference between the maximum and minimum is {result}");
-*/
+
  
