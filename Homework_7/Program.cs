@@ -14,7 +14,7 @@ double [,] CreateRandom2dArray()
     double[,] newArray = new double [rows, columns];
     for (int i = 0; i < rows; i++)
         for (int j = 0; j < columns; j++)
-            newArray[i, j] = new Random().Next(minValue, maxValue) + new Random().NextDouble();
+            newArray[i, j] = Math.Round(new Random().Next(minValue, maxValue) + new Random().NextDouble(), 2);
     return newArray;
 }
 
@@ -60,10 +60,10 @@ void FindValue(int [,] array)
     int i = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter the column number of the element: ");
     int j = Convert.ToInt32(Console.ReadLine());
-    if(i<array.GetLength(0)&&j<array.GetLength(1))
-    Console.Write($"The value of element {array[i-1,j-1]}");
+    if(i<=array.GetLength(0)&&j<=array.GetLength(1))
+        Console.Write($"The value of element {array[i-1,j-1]}");
     else
-    Console.Write("There is no such element");
+        Console.Write("There is no such element");
 }
 
 void Show2dArray(int [,] array)
@@ -83,7 +83,7 @@ FindValue(array);
 */
 
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
-
+/*
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input numbers of rows: ");
@@ -139,4 +139,4 @@ double[] result = ArithmeticMeanColumn(myarray);
 
 Show2dArray(myarray);
 PrintArray(result);
-
+*/
